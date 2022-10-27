@@ -3,37 +3,147 @@ body,
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
   font-family: "Dm Sans", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* 27 px */
+h1 {
+  font-size: 1.6875rem;
+  font-weight: bold;
+}
+
+/* 21px */
+h2 {
+  font-size: 1.3125rem;
+  font-weight: bold;
+}
+
+/* 17px */
+strong {
+  font-size: 1.0625rem;
+  font-weight: 500;
+}
+
+/* 15px */
+label,
+p {
+  font-size: 0.9375rem;
+  font-weight: normal;
+}
+
+p {
+  opacity: 0.8;
 }
 
 a {
+  font-size: 0.9375rem;
+  font-weight: normal;
   color: white;
   text-decoration: none;
-  padding: 5px;
   cursor: pointer;
+  text-align: center;
 }
 
-a:hover,
-.active {
-  border-bottom: 5px;
-  border-color: white;
-  border-style: solid;
+.circle {
+  border-radius: 100px;
 }
 
+.fixed-width {
+  max-width: 1150px;
+  margin: auto;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.flex-item {
+  display: flex;
+}
+
+/*=============== 
+      HEADER
+=================*/
 .page-header {
   background-color: #08182f;
   color: white;
 }
 
-.fixed-width {
-  width: 1150px;
-  margin: auto;
-  border: 1px;
-  border-color: beige;
-  border-style: solid;
+.header-container {
+  padding-block: 0.625rem;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-container {
+  width: 123px;
+  position: relative;
+}
+
+.main-nav {
+  width: 409px;
+}
+
+.right-header-container {
+  width: 217px;
+  position: relative;
+}
+
+.profile-container {
+  width: 137px;
+}
+
+.justify {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container .logo-image .logo-inside-label {
+  padding: 3px;
+  color: #333;
+  text-align: center;
+  justify-content: center;
+  transform: rotate(-45deg);
+}
+
+.logo-container .circle {
+  background-color: white;
+  width: 2.1875rem;
+  height: 2.1875rem;
+}
+
+.main-nav a {
+  padding: 5px 20px;
+}
+/* 
+.main-nav li {
+  margin-right: 0.625rem;
+}
+
+.main-nav li:last-child {
+  margin-right: 0;
+} */
+
+a:hover,
+.active {
+  border-bottom: 5px solid rgba(255, 255, 255, 0.8);
+}
+
+.profile-image-container img {
+  width: 2.1875rem;
 }
