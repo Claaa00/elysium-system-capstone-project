@@ -1,0 +1,39 @@
+body,
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Dm Sans", sans-serif;
+  font-size: 15px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+a:hover,
+.active {
+  border-bottom: 5px;
+  border-color: white;
+  border-style: solid;
+}
+
+.page-header {
+  background-color: #08182f;
+  color: white;
+}
+
+.fixed-width {
+  width: 1150px;
+  margin: auto;
+  border: 1px;
+  border-color: beige;
+  border-style: solid;
+}
